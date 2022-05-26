@@ -12,7 +12,6 @@ import java.util.List;
 public class DepartmentController {
     @Autowired
     DepartmentRepository departmentRepository;
-
     @GetMapping("/departments")
     public List<Department> getAllDepartments(){
         return departmentRepository.findAll();
